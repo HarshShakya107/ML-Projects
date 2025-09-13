@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Load dataset (MovieLens or custom)
-movies = pd.read_csv(r"C:\\Users\\HP\\OneDrive\\Desktop\\Ml Projects\\movie2.csv")   # contains movieId, title, genres
+movies = pd.read_csv("movie2.csv")   # contains movieId, title, genres
 
 # Feature engineering
 movies['tags'] = movies['genres']  # simple tags from genres
@@ -36,3 +36,4 @@ if st.button("Recommend"):
     st.write("Top Recommendations:")
     for movie in recommendations:
         st.write(movie)
+
