@@ -1,3 +1,8 @@
-pandas
-streamlit
-scikit-learn
+streamlit==1.27.0
+pandas==2.1.0
+numpy==1.27.5
+PyPDF2==3.1.0
+gTTS==2.3.2
+googletrans==4.0.0rc1
+transformers==4.39.2
+torch==2.1.0
